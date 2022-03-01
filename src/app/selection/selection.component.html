@@ -1,0 +1,24 @@
+<div class="card"> 
+    <form>
+        <div class="right">
+            <label>Moc:</label><br>
+            <label for="content">Strefa Klimatyczna:</label><br>
+            <label for="comment" class="form-label">System Grzewczy: </label>
+        </div>
+        <div class="left">
+            <input type="text" class="a1" name="moc" [(ngModel)]="moc"/><br>
+    
+            <input type="text" [(ngModel)]="strefaKlimatyczna" name="strefaklimatyczna"/><br>
+            
+            <input type="text" class="from-control"[(ngModel)]="zrudloCiepla"name="zrudloCiepla" />
+        </div>
+    
+        <button (click)="sendRequestToBackend()">Dobierz Popmpe</button>
+    </form>
+
+
+<div class="score">
+    <p>{{ backendResponse }}</p>   
+</div>
+</div>
+
