@@ -11,7 +11,7 @@ export interface Dane{
 })
 export class ApiService {
 
-  readonly ApiURL="https://brilliantfinish.azurewebsites.net/api";
+  readonly ApiURL="https://appertester.azurewebsites.net/api";
 
   constructor(private http:HttpClient) { }
   
